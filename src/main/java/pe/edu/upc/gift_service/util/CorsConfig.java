@@ -13,7 +13,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://gift-service-front-expo.netlify.app")  // Ajusta el origen permitido
+                        .allowedOrigins("http://localhost:4200", "https://gift-service-front-expo.netlify.app")  // Ajusta el origen permitido
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") //eliminas los que no uses
                         .allowedHeaders("*")
                         .allowCredentials(true);
