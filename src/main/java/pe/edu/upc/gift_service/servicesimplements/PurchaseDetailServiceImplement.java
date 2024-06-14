@@ -15,9 +15,7 @@ public class PurchaseDetailServiceImplement implements IPurchaseDetailService {
     private IPurchaseDetailRepository pdR;
 
     @Override
-    public void insert(PurchaseDetail PurchaseDetail) {
-        pdR.save(PurchaseDetail);
-    }
+    public void insert(PurchaseDetail purchaseDetail) { pdR.save(purchaseDetail); }
 
     @Override
     public List<PurchaseDetail> list() {

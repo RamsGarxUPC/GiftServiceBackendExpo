@@ -8,8 +8,8 @@ public class PurchaseDetail {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idPurchaseDetail;
-    @Column(name = "cTotalPurchaseDetail", nullable = false)
-    private Double cTotalPurchaseDetail;
+    @Column(name = "amountTotalPurchaseDetail", nullable = false)
+    private Double amountTotalPurchaseDetail;
     @Column(name = "cantidadPurchaseDetail", nullable = false)
     private int cantidadPurchaseDetail;
 
@@ -24,9 +24,9 @@ public class PurchaseDetail {
     public PurchaseDetail() {
     }
 
-    public PurchaseDetail(int idPurchaseDetail, Double cTotalPurchaseDetail, int cantidadPurchaseDetail, Purchase purchase, Product product) {
+    public PurchaseDetail(int idPurchaseDetail, Double amountTotalPurchaseDetail, int cantidadPurchaseDetail, Purchase purchase, Product product) {
         this.idPurchaseDetail = idPurchaseDetail;
-        this.cTotalPurchaseDetail = cTotalPurchaseDetail;
+        this.amountTotalPurchaseDetail = amountTotalPurchaseDetail;
         this.cantidadPurchaseDetail = cantidadPurchaseDetail;
         this.purchase = purchase;
         this.product = product;
@@ -40,12 +40,12 @@ public class PurchaseDetail {
         this.idPurchaseDetail = idPurchaseDetail;
     }
 
-    public Double getcTotalPurchaseDetail() {
-        return cTotalPurchaseDetail;
+    public Double getAmountTotalPurchaseDetail() {
+        return amountTotalPurchaseDetail;
     }
 
-    public void setcTotalPurchaseDetail(Double cTotalPurchaseDetail) {
-        this.cTotalPurchaseDetail = cTotalPurchaseDetail;
+    public void setAmountTotalPurchaseDetail(Double amountTotalPurchaseDetail) {
+        this.amountTotalPurchaseDetail = amountTotalPurchaseDetail;
     }
 
     public int getCantidadPurchaseDetail() {

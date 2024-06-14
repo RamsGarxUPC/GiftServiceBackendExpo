@@ -6,7 +6,7 @@ import pe.edu.upc.gift_service.entities.Purchase;
 
 public class PurchaseDetailDTO {
     private int idPurchaseDetail;
-    private Double cTotalPurchaseDetail;
+    private Double amountTotalPurchaseDetail;
     private int cantidadPurchaseDetail;
     private Purchase purchase;
 
@@ -20,12 +20,12 @@ public class PurchaseDetailDTO {
         this.idPurchaseDetail = idPurchaseDetail;
     }
 
-    public Double getcTotalPurchaseDetail() {
-        return cTotalPurchaseDetail;
+    public Double getAmountTotalPurchaseDetail() {
+        return amountTotalPurchaseDetail;
     }
 
-    public void setcTotalPurchaseDetail(Double cTotalPurchaseDetail) {
-        this.cTotalPurchaseDetail = cTotalPurchaseDetail;
+    public void setAmountTotalPurchaseDetail(Double amountTotalPurchaseDetail) {
+        this.amountTotalPurchaseDetail = amountTotalPurchaseDetail;
     }
 
     public int getCantidadPurchaseDetail() {

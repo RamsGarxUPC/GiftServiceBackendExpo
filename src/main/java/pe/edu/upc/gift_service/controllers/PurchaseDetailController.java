@@ -22,9 +22,9 @@ public class PurchaseDetailController {
 
     @PostMapping
     //@PreAuthorize("hasAnyAuthority('EMPRENDIMIENTO','ADMIN')")
-    public void insertar(@RequestBody PurchaseDetailDTO PurchaseDetailDTO) {
+    public void insertar(@RequestBody PurchaseDetailDTO purchaseDetailDTO) {
         ModelMapper m = new ModelMapper();
-        PurchaseDetail e = m.map(PurchaseDetailDTO, PurchaseDetail.class);
+        PurchaseDetail e = m.map(purchaseDetailDTO, PurchaseDetail.class);
         pdS.insert(e);
     }
 
