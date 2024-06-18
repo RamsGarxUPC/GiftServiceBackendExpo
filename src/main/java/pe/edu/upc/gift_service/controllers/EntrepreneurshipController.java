@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/entrepreneurships")
+@CrossOrigin(origins = "http://localhost:4200")
 //@PreAuthorize("hasAnyAuthority('EMPRENDIMIENTO', 'ADMIN')")
 public class EntrepreneurshipController {
     @Autowired

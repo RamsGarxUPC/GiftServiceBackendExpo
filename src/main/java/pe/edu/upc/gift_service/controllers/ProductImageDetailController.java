@@ -14,6 +14,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/productimagedetails")
+@CrossOrigin(origins = "http://localhost:4200")
 //@PreAuthorize("hasAnyAuthority('EMPRENDIMIENTO','ADMIN')")
 public class ProductImageDetailController {
     @Autowired

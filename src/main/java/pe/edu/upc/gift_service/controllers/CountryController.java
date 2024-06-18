@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("countries")
+@CrossOrigin(origins = "http://localhost:4200")
 //@PreAuthorize("hasAnyAuthority('EMPRENDIMIENTO','ADMIN','USUARIO')")
 public class CountryController {
     @Autowired
